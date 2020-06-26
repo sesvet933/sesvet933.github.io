@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+<link rel="stylesheet" type="text/css" href="css/slider-dots.css">
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- для правельного отображения на планшете , мобилке --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Светлана Armelle</title>
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- HEADER  -->
+
+<header>
+<div class="main-top">
+   <div class="header-t clearfix">
+     <div>
+     <p class="armel"><img src="images/logo.jpg"   style="width:230px; height:120px;" alt="armelle"></p>
+     </div>
+     <br>
+     <div class="tel-basket">
+     <p class="tel"><img src="images/i-phone.png" alt="icon phone">+7 (910) 766-90-43</p>
+     </div>
+      <br>
+     <div>
+     <p class="name_armel">Сергиенко Светлана</p>
+     </div>   
+   </div>
+</div>
+</header>
+
+<!-- SLIDER -->
+
+<div class="my-slider main-top">
+   <ul>
+       <li><img src="images/slid1.jpg" alt="слайд_1"></li>
+       <li><img src="images/slid2.jpg" alt="слайд_2"></li>
+       <li><img src="images/slid3.jpg" alt="слайд_3"></li>
+       <li><img src="images/slid4.jpg" alt="слайд_4"></li>
+       <li><img src="images/slid5.jpg" alt="слайд_5"></li>
+       <li><img src="images/slid6.jpg" alt="слайд_6"></li>
+       <li><img src="images/slid7.jpg" alt="слайд_7"></li>
+      
+   </ul>
+</div>
+
+<!-- TEXT -->
+
+<div class="main-middle3 main-top clearfix">
+   <article>
+     <a href="sv_text_1.html">
+     <img src="images/big/bgb1.jpg" alt="bg1">
+     </a>
+     <p> Могут ли мечты стать реальностью?...</p>
+     <h2>
+     <a href="sv_text_1.html">Далее...</a>
+     </h2>
+   </article>
+   <article>
+     <a href="sv_text_2.html">
+     <img src="images/big/bgb2.jpg" alt="bg2">
+     </a>
+     <p> Дорогие друзья !!! Приглашаю Вас...</p>
+     <h2>
+     <a href="sv_text_2.html">Далее...</a>
+     </h2>
+   </article>
+   <article>
+     <a href="sv_text_3.html">
+     <img src="images/big/bgb3.jpg" alt="bg3">
+     </a>
+     <p> Итак,если Вы прочитали мои две...</p>
+     <h2>
+     <a href="sv_text_3.html">Далее...</a>
+     </h2>
+   </article>
+</div>
+
+<!-- FOOTER  -->
+
+<div class="footer">
+   <div>
+     <div class="row">
+     
+        <div class="col-4">
+        <p class="footer_name">Светлана Сергиенко</p>
+        <p class="footer_name_k">Компания ARMELLE</p>
+        </div>
+        
+        <div class="col-4">
+            <div class="footer_social">
+             Мои профили в социальных сетях:
+            </div>
+            
+            <div class="footer_social-icons">
+            <a href="https://ok.ru/profile/521828860155" target= "_blank">
+            <img src="images/seti/ok.png" alt="Однокласники">
+            </a>
+            <a href="https://vk.com/id239665690" target="_blank">
+            <img src="images/seti/vk.png" alt="В Контакте">
+            </a>
+            <a href="https://www.instagram.com/p/CAbEEWeA649/?utm_source=ig_web_copy_link" target="_blank">
+            <img src="images/seti/instagram.png" alt="Инстаграм">
+            </a>
+           
+            </div>
+        </div>
+        
+        <div class="col-4">
+            <div>
+            <a href="https://armelle.world/70210156" class="button" target="_blank">
+            СТАТЬ ПАРТНЕРОМ МОЕЙ КОМАНДЫ
+            </a>
+            </div>
+       </div>
+     </div>
+   </div>
+</div>
+
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/slider.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+			nav:false,  <!-- true - кнопки навигации видно -->
+			autoplay:true,
+			arrows:false,
+			delay:6000,
+			speed:750,
+			animation:'horizontal',/*'horizontal' 'vertical' */
+			});
+		});
+	</script>
+    <!-----      Выравнивание колонок     .level-0    ----->	
+	<script>
+	function setEqualHeight(columns) { 
+		var heightcolumn = 0; 
+		columns.each( function() { 
+			currentHeight = $(this).height(); 
+			if(currentHeight > heightcolumn) { heightcolumn = currentHeight; } } ); 
+			columns.height(heightcolumn); 
+		} 
+		
+		$(document).ready(function() { setEqualHeight($(".level-0")); });
+</script>
+</body>
+</html>

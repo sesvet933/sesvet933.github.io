@@ -94,7 +94,8 @@ img{
 
 /* ----- /базовые настройки ----- */
 .main-top {max-width:1166px; margin:0 auto;}
-.work { float:left;}
+.header-t { padding:25px 0 20px 0; border-bottom:2px solid #d3d3d2;} 
+.asus { float:left;}
 .my-slider ul li { position: relative;}
 .main-middle3 article a img { border:1px solid #d3d3d2; margin:0 auto 18px auto; display:block;}
 .main-middle3 article a:hover img { border:1px solid #333;}
